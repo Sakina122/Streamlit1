@@ -1,13 +1,11 @@
-# weight_converter.py
+# weight_converter_app.py
+import streamlit as st
+
 def pounds_to_kilograms(pounds):
     return pounds * 0.45359237
 
 def kilograms_to_pounds(kilograms):
     return kilograms / 0.45359237
-
-# app.py
-import streamlit as st
-from weight_converter import pounds_to_kilograms, kilograms_to_pounds
 
 def main():
     st.title("Weight Converter")
@@ -26,5 +24,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
